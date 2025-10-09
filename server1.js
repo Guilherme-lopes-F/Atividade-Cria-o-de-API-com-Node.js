@@ -144,12 +144,13 @@ app.post('/comidas/adicionarcomidas', (req, res) => {
 			preco: item.preco
 		});
 	});
-	 res.json(fiscal);
+	 res.json(comidas);
 })
 
 app.listen(port, () => {
     console.log(`Servidor em execução: http://localhost:${port}`);
 });
+
 
 
 
