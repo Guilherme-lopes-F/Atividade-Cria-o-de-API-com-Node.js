@@ -144,12 +144,13 @@ app.post('/comidas/adicionarcomidas', (req, res) => {
 			preco: item.preco
 		});
 	});
-	 res.status(404).json({ error: 'Comida não encontrada.'});
+	 res.json(fiscal);
 })
 
 app.listen(port, () => {
     console.log(`Servidor em execução: http://localhost:${port}`);
 });
+
 
 
 
